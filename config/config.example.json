@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "device_name": "home-gateway",
+      "url": "https://192.168.50.1",
+      "port": 443,
+      "username": "${IKUAI_USERNAME}",
+      "password": "${IKUAI_PASSWORD}",
+      "verify_tls": false,
+      "polling": 900,
+      "upload_value": 1000000,
+      "low_upload_samples": 2,
+      "cooldown_seconds": 3600,
+      "max_clears_per_cycle": 4,
+      "allowed_clear_ranges": [
+        "192.168.50.11-192.168.50.50"
+      ],
+      "except_ips": [
+        "192.168.50.46"
+      ],
+      "live_special_ips": [
+        "192.168.50.20"
+      ],
+      "live_upload_value": 300000,
+      "live_min_connect_num": 80,
+      "group_ranges": {
+        "1": [[11, 21]],
+        "2": [[22, 33]],
+        "3": [[34, 50]]
+      },
+      "active_group_windows": [
+        {"start": "00:00", "end": "09:00", "groups": ["1"], "allow_clear": true},
+        {"start": "09:00", "end": "13:30", "groups": ["3"], "allow_clear": true},
+        {"start": "13:30", "end": "18:00", "groups": ["2"], "allow_clear": true},
+        {"start": "18:00", "end": "24:00", "groups": [], "allow_clear": false}
+      ]
+    }
+  ],
+  "monitor": {
+    "enabled_devices": ["home-gateway"],
+    "lan_prefix": "192.168.50.",
+    "lan_host_start": 11,
+    "lan_host_end": 43,
+    "line_prefix": "10.10.0.",
+    "line_alert_after_misses": 2,
+    "manual_lan_labels": {
+      "192.168.50.20": "example-node"
+    },
+    "expected_lines": {
+      "101": {"display": "WAN-101"},
+      "102": {"display": "WAN-102"}
+    }
+  }
+}
