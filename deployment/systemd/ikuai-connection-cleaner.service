@@ -1,0 +1,21 @@
+[Unit]
+Description=iKuai stateful low-upload connection cleaner
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/homelab-network-automation
+EnvironmentFile=/opt/homelab-network-automation/.env
+ExecStart=/opt/homelab-network-automation/.venv/bin/ikuai-cleaner --config config/config.json
+Restart=always
+RestartSec=10
+User=ikuai-automation
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/opt/homelab-network-automation/.state
+
+[Install]
+WantedBy=multi-user.target

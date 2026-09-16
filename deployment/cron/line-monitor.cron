@@ -1,0 +1,2 @@
+# Run every five minutes. flock prevents overlapping monitor jobs.
+*/5 * * * * /usr/bin/flock -n /tmp/ikuai-line-monitor.lock /opt/homelab-network-automation/.venv/bin/ikuai-notify --config /opt/homelab-network-automation/config/config.json >> /var/log/ikuai-line-monitor.log 2>&1
