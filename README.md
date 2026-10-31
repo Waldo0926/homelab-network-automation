@@ -3,7 +3,7 @@
 [![Type](https://img.shields.io/badge/Type-Network_Automation-2563eb?style=for-the-badge)](#)
 [![Tech](https://img.shields.io/badge/Tech-Python_%7C_Linux_%7C_iKuai-7c3aed?style=for-the-badge)](#)
 [![Tests](https://img.shields.io/badge/Tests-pytest-16a34a?style=for-the-badge)](#)
-[![Status](https://img.shields.io/badge/Status-Archived_Portfolio-475569?style=for-the-badge)](#status)
+[![Status](https://img.shields.io/badge/Status-Historical_Deployment-475569?style=for-the-badge)](#status)
 
 **English** · [简体中文](README.zh-CN.md)
 
@@ -138,4 +138,4 @@ The goal is to demonstrate the engineering approach without exposing operational
 
 ## Status
 
-**Archived / Portfolio Project.** The original deployment has been retired. The repository remains as a reviewable example of network automation, stateful monitoring, defensive operations, and Linux service integration.
+**Historical deployment / public reference.** The original deployment has been retired. The repository remains as a reviewable example of network automation, stateful monitoring, defensive operations, and Linux service integration.
