@@ -3,7 +3,7 @@
 [![Type](https://img.shields.io/badge/Type-Network_Automation-2563eb?style=for-the-badge)](#)
 [![Tech](https://img.shields.io/badge/Tech-Python_%7C_Linux_%7C_iKuai-7c3aed?style=for-the-badge)](#)
 [![Tests](https://img.shields.io/badge/Tests-pytest-16a34a?style=for-the-badge)](#)
-[![Status](https://img.shields.io/badge/Status-Archived_Portfolio-475569?style=for-the-badge)](#项目状态)
+[![Status](https://img.shields.io/badge/Status-Historical_Deployment-475569?style=for-the-badge)](#项目状态)
 
 [English](README.md) · **简体中文**
 
@@ -138,4 +138,4 @@ ikuai-notify --config config/config.json
 
 ## 项目状态
 
-**Archived / Portfolio Project。** 原部署已停止使用；该仓库作为作品集保留，用于展示网络自动化、状态化监控、防御性运维和 Linux 服务集成能力。
+**历史部署已停用，公开仓库保留参考。** 原部署已停止使用；该仓库作为作品集保留，用于展示网络自动化、状态化监控、防御性运维和 Linux 服务集成能力。
